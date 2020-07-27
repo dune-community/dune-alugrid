@@ -71,7 +71,7 @@ namespace Dune
             const bool verb = true ) :
       BaseType(macroName, mpiComm, bndPrj, refineType )
     {
-      const bool verbose = verb && this->comm().rank() == 0;
+      const bool verbose = false;//verb const bool verbose = verb && this->comm().rank() == 0;const bool verbose = verb && this->comm().rank() == 0; this->comm().rank() == 0;
       if( verbose )
       {
         std::cout << "\nCreated " << ALUGridParallelSerial< Comm >() << " " << name() << nameSuffix()
@@ -106,7 +106,7 @@ namespace Dune
             const bool verb = true ) :
       BaseType("", mpiComm, bndPrj, refineType )
     {
-      const bool verbose = verb && this->comm().rank() == 0;
+      const bool verbose = false;//verb const bool verbose = verb && this->comm().rank() == 0;const bool verbose = verb && this->comm().rank() == 0; this->comm().rank() == 0;
       if( verbose )
       {
         std::cout << "\nCreated " << ALUGridParallelSerial< Comm >() << " " << name() << nameSuffix();

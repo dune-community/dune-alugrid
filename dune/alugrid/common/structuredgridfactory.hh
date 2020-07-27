@@ -326,7 +326,7 @@ namespace Dune
       dgfstream << "Simplex" << std::endl;
       dgfstream << "#" << std::endl;
 
-      std::cout << dgfstream.str() << std::endl;
+      //std::cout << dgfstream.str() << std::endl;
 
       Dune::GridPtr< Grid > grid( dgfstream, mpiComm );
       return SharedPtrType( grid.release() );
