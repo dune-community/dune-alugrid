@@ -1659,8 +1659,8 @@ namespace ALUGrid
         }
         else
         {
-          std::cerr << "WARNING (ignored): Could not open file 'alugrid.cfg', using default values ";
-          std::cerr << _ldbUnder << " < [balance] < " << _ldbOver << ", partitioning method '" << LoadBalancer::DataBase::methodToString( _ldbMethod ) << "'." << std::endl;
+          // std::cerr << "WARNING (ignored): Could not open file 'alugrid.cfg', using default values ";
+          // std::cerr << _ldbUnder << " < [balance] < " << _ldbOver << ", partitioning method '" << LoadBalancer::DataBase::methodToString( _ldbMethod ) << "'." << std::endl;
         }
       } // got values on rank 0
 
