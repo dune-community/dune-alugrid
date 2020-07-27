@@ -61,9 +61,10 @@ namespace ALUGridZoltan
 {
   using ::ALUGrid::MpAccessGlobal;
   using ::ALUGrid::MpAccessLocal;
-  using ::ALUGrid::MpAccessMPI;
 
 #if HAVE_ZOLTAN
+  using ::ALUGrid::MpAccessMPI;
+
   template < class ldb_vertex_map_t, class ldb_edge_set_t >
   class ObjectCollection
   {
